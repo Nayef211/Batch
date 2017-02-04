@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tron 2021 8Stream</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="static/css/style.css" rel="stylesheet">
+
+    <!-- Buttons CSS -->
+    <link href="static/css/buttons.css" rel="stylesheet">
+
+    <!-- CSShake -->
+    <link href="static/css/csshake.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="lib/angular-animate.min.js"></script>
+    <!-- Theme CSS -->
+    <link href="static/css/hover.css" rel="stylesheet">
+    <script type="text/javascript" src="static/js/dashboard.js"></script>
+
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+
+    <div style="position: absolute; text-align: center; width: 100%">
+        <h2>Dashboard</h2>
+    </div>
+
+
+   <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div>                       
+                    <ul>
+                        <h4>MTE120 (Circuits)</h4>
+                        <li ng-repeat = "task in circuits">{{task}}</li>
+                        <input ng-model="addC">
+                        <button ng-click = "addCircuits()">Add!</button>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>                       
+                    <ul>
+                        <h4>MTE111 (Materials)</h4>
+                        <li ng-repeat = "task in materials">{{task}}</li>
+                        <input ng-model="addM">
+                        <button ng-click = "addMaterials()">Add!</button>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>                       
+                    <ul>
+                        <h4>MTE118 (Calculus)</h4>
+                        <li ng-repeat = "task in calculus">{{task}}</li>
+                        <input ng-model="addCal">
+                        <button ng-click = "addCalculus()">Add!</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- jQuery -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="static/js/freelancer.min.js"></script>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="static/js/main.js"></script>
+
+
+</body>
+</html>
