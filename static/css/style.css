@@ -1,0 +1,148 @@
+html{
+    height: 100%;
+}
+
+body {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  height: 100%;
+  background-image: url(../img/pattern/main.png);
+}
+
+p.tab {
+  margin-bottom: 0px;
+  margin-top: 3px;
+}
+
+p.small {
+  font-size: 16px;
+}
+
+a.tabs{
+  color: #333;
+}
+
+a.uni{
+  color: white;
+}
+
+#bar{
+  position: relative;
+  width: 70%;
+}
+
+#input-text{
+  display: inline;
+}
+
+#microphone{
+    background: url("../img/mp_normal.png") no-repeat;
+    height: 20px;
+    width: 20px;
+}
+#microphone:hover{
+    background: url("../img/mp_onclick.png") no-repeat;
+}
+
+#listen-btn{
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  border: none;
+  background: white;
+  padding: 0;
+}
+
+#submit-btn{
+  margin: 30px 0;
+}
+
+#statusBar {
+    position: relative;
+    height: 15px;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 1px;
+    margin-bottom: 10px;
+    background-color: #eee;
+}
+
+#greenBarFiller {
+    left: 50%;
+    position: absolute;
+    height: 100%;
+    background: green;
+}
+
+#redBarFiller {
+    position: absolute;
+    height: 100%;
+    background: red;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.container {
+  /*background: repeat;*/
+}
+
+.container {
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  height: 100vh;
+}
+
+.container .row{
+  margin: 10% 0;
+}
+
+.container .description{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom: 5%;
+  flex-direction: column;
+}
+
+.container .intro-text #name {
+  display: block;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3em;
+  color: #032341;
+}
+
+
+.container .col-lg-6{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+@media (min-width: 768px) {
+  .container .img{
+    display: block;
+  }
+  .container .row{
+    display: flex;
+    direction: row;
+  }
+  .container .container {
+    padding-top: -px;
+    padding-bottom: 0px;
+  }
+  .container .intro-text #name {
+    font-size: 6em;
+  }
+  .container .intro-text .edu {
+    padding-top: 0px;
+    font-size: 1.75em;
+    color: #2E2E2E;
+  }
+}
