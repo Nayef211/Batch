@@ -40,8 +40,9 @@ angular
 		}
 		$scope.addMaterials = function()
 		{
-			$scope.materials.push($scope.addM);
+			$scope.materials.push({"Due": $scope.addMDate,"Name": $scope.addM,"$id":3,"$priority":null});
 			$scope.addM = null;
+			$scope.addMDate = null;
 		}
 
 		$scope.removeCir = function (x) {
