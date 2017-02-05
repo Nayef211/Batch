@@ -19,8 +19,8 @@
         <form name="form" class="login-container">
             <p><input type="email" placeholder="Email" name="emailHolder" id="mail"/></p>
             <p><input type="password" placeholder="Password" name="passHolder" id="pass"/></p>
-            <!--<p><input type="submit" value="Login" onclick="firebase.auth().signInWithEmailAndPassword(document.getElementById('mail').value, document.getElementById('pass').value)"/></p> -->
-            <p><button id='login'>Log In</button>
+            <!--<p><input type="submit" value="Login" onclick="return validateForm()"/></p> -->
+            <p><button id='login' type="button">Log In</button><button id="logout" type="button">Log Out</button></p>
         </form>
     </div>
 
