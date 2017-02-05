@@ -22,7 +22,15 @@
     <link href="static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+      <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
+
     <script src="lib/angular-animate.min.js"></script>
 
     <!-- Theme CSS -->
@@ -31,7 +39,7 @@
 
 </head>
 
-<body ng-app="myApp" ng-controller="myCtrl">
+<body ng-app="myApp" ng-controller="MyCtrl">
 
     <div style="position: absolute; text-align: center; width: 100%">
         <h2>Dashboard</h2>
@@ -82,7 +90,7 @@
         <div style = "height:width:260px;background:rgba(0,0,0,0.2);position:relative;top:51px; left:-60px;" ng-show ="calAbout" ng-style="{height: aboutHeight+calculus.length *20 + 'px'}">
                     <ul style="padding: 0px;">
                         <h4>MTE118 (Calculus)</h4>
-                        <li ng-repeat = "task in calculus">{{task}}<span ng-click="removeCal($index)">  X </span></li>
+                        <li ng-repeat = "x in calculus">{{x.Name}}<span ng-click="removeCal($index)">  X </span></li>
                         <input ng-model="addCal">
                         <button ng-click = "addCalculus()">Add!</button>
                     </ul>
