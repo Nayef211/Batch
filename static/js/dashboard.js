@@ -12,7 +12,7 @@ app.controller('myCtrl', function($scope) {
 	$scope.matAbout = false;
 	$scope.calAbout = false;
 
-	$scope.aboutHeight = 300;
+	$scope.aboutHeight = 100;
 	
 
 	$scope.addCircuits = function()
@@ -31,9 +31,14 @@ app.controller('myCtrl', function($scope) {
 		$scope.addCal = null;
 	}
 
-	$scope.getHeight = function()
-	{
-
-	}
+	$scope.removeCir = function (x) {
+        $scope.circuits.splice(x, 1);
+    }
+    $scope.removeMat = function (x) {
+        $scope.materials.splice(x, 1);
+    }
+    $scope.removeCal = function (x) {
+        $scope.calculus.splice(x, 1);
+    }
 
 });
