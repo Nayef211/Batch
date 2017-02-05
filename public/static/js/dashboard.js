@@ -17,11 +17,10 @@ angular
     .module('myApp', ['firebase',])
     .controller('MyCtrl', function($scope, $firebaseArray){
         var rootRef = firebase.database().ref().child('tasks');
-        var cal = rootRef.child(0);
-        $scope.calculus= $firebaseArray(cal);
-
-        $scope.circuits = ["Chapter 13 Problem Set", "Memes"];
-		$scope.materials = ["Study Midterms", "Tutorial Questions"];
+        var mat = rootRef.child(1);
+        var cir = rootRef.child(2);        
+        $scope.circuits = $firebaseArray(cir);
+		$scope.materials = $firebaseArray(mat);
 
 		
 		$scope.cirAbout = false;
@@ -35,18 +34,14 @@ angular
 
 		$scope.addCircuits = function()
 		{
-			$scope.circuits.push($scope.addC);
+			$scope.circuits.push({"Due": $scope.addCDate,"Name": $scope.addC,"$id":3,"$priority":null});
 			$scope.addC = null;
+			$scope.addCDate = null;
 		}
 		$scope.addMaterials = function()
 		{
 			$scope.materials.push($scope.addM);
 			$scope.addM = null;
-		}
-		$scope.addCalculus = function()
-		{
-			$scope.calculus.push($scope.addCal);
-			$scope.addCal = null;
 		}
 
 		$scope.removeCir = function (x) {
@@ -55,8 +50,6 @@ angular
 	    $scope.removeMat = function (x) {
 	        $scope.materials.splice(x, 1);
 	    }
-	    $scope.removeCal = function (x) {
-	        $scope.calculus.splice(x, 1);
-	    }
+
     });
 }());
