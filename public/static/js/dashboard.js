@@ -1,4 +1,5 @@
 var app = angular.module('myApp', []);
+
 app.controller('myCtrl', function($scope) {
 	$scope.circuits = ["Chapter 13 Problem Set", "Memes"];
 	$scope.materials = ["Study Midterms", "Tutorial Questions"];

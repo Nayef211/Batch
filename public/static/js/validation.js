@@ -4,7 +4,7 @@ function validateForm() {
         passValue = document.getElementById("pass").value;
 
     if(emailValue == 'Jonathan@hotmail.com' && passValue == 'hello') {
-        alert('Logged in successfully');
+        //alert('Logged in successfully');
         window.location.href = "dashboard.html";
         return false;
     }
