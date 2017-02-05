@@ -1,4 +1,4 @@
-# Batch
+# [Batch] (https://batch-3fd9b.firebaseapp.com/dashboard.html)
 ### Background
 
 Have you ever had a lot of work to do, but you have no sense of how to budget your time? Have you ever had an approaching deadline, and when you are comparing things with your classmates, the group chat was a mess? This is what is looks like:
