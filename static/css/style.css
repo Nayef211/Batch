@@ -146,3 +146,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #2E2E2E;
   }
 }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  line-height: 100px;
+  text-align: center;
+  background: #000
+}
