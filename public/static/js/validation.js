@@ -1,15 +1,16 @@
 (function() {
-    var config = {
-        apiKey: "AIzaSyBrt9LbBh44FUvc8_Ndpj3t36uiHZhwN6o",
-        authDomain: "batch-3fd9b.firebaseapp.com",
-        databaseURL: "https://batch-3fd9b.firebaseio.com",
-        storageBucket: "batch-3fd9b.appspot.com",
-        messagingSenderId: "727416862799"
-    };
-    firebase.initializeApp(config);
-
     var email = document.getElementById('mail');
     var pass = document.getElementById('pass');
+    var loginB = document.getElementById('login');
+
+    loginB.addEventListener('click', e => {
+        const emailVal = email.value();
+        const passVal = pass.value();
+        const auth = firebase.auth();
+
+        const promise = auth.signInWithEmailAndPassword(emailVal,passVal);
+        promise.catch(e => console.log(e.message));
+    })
 }());
 
 function validateForm() {
@@ -33,29 +34,3 @@ firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(e
     var errorCode = error.code;
     var errorMessage = error.message;
 }); */
-
-/*
-function go(){
-
-    var email = document.getElementById("mail").value;
-        password = document.getElementById("pass").value;
-    
-    alert("entered");*/
-
-    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error){
-        alert("entered firebase");
-        var errorCode = error.code;
-        var errorMessage = error.message;
-    });
-
-//}
-
-firbease.auth().onAuthStateChanged(function(user){
-    alert("logged in");
-    if(user){
-        window.location = "database.html";
-        return false;
-    } else {
-
-    }
-});
