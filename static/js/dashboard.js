@@ -13,7 +13,7 @@ app.controller('myCtrl', function($scope) {
 	$scope.calAbout = false;
 
 	$scope.aboutHeight = 300;
-	
+
 
 	$scope.addCircuits = function()
 	{
