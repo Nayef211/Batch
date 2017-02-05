@@ -1,15 +1,23 @@
 (function() {
-    var email = document.getElementById('mail');
-    var pass = document.getElementById('pass');
-    var loginB = document.getElementById('login');
+    const email = document.getElementById('mail');
+    const pass = document.getElementById('pass');
+    const loginB = document.getElementById('login');
 
     loginB.addEventListener('click', e => {
-        const emailVal = email.value();
-        const passVal = pass.value();
+        const emailVal = email.value;
+        const passVal = pass.value;
         const auth = firebase.auth();
-
+        console.log("loginB");
         const promise = auth.signInWithEmailAndPassword(emailVal,passVal);
         promise.catch(e => console.log(e.message));
+    })
+
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+        if(firebaseUser) {
+            console.log(firebaseUser);
+        } else {
+            console.log("not logged in");
+        }
     })
 }());
 
@@ -25,12 +33,3 @@ function validateForm() {
     }
     
 }
-
-
-
-/*
-firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-    
-    var errorCode = error.code;
-    var errorMessage = error.message;
-}); */
