@@ -34,13 +34,13 @@ angular
 
 		$scope.addCircuits = function()
 		{
-			$scope.circuits.push({"Due": $scope.addCDate,"Name": $scope.addC,"$id":3,"$priority":null});
+			$scope.circuits.push({"Due:": $scope.addCDate,"Name": $scope.addC,"$id":3,"$priority":null});
 			$scope.addC = null;
 			$scope.addCDate = null;
 		}
 		$scope.addMaterials = function()
 		{
-			$scope.materials.push({"Due": $scope.addMDate,"Name": $scope.addM,"$id":3,"$priority":null});
+			$scope.materials.push({"Due:": $scope.addMDate,"Name": $scope.addM,"$id":3,"$priority":null});
 			$scope.addM = null;
 			$scope.addMDate = null;
 		}

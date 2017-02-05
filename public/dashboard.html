@@ -55,7 +55,7 @@
             <div style = "height:width:260px;background:rgba(0,0,0,0.2);position:relative;top:51px; left:-60px;" ng-show ="cirAbout" ng-style="{height: aboutHeight+circuits.length *40 + 'px'}">
                 <ul style="padding: 0px;">
                         <h4>MTE120 (Circuits)</h4>
-                        <li ng-repeat = "task in circuits">{{task.Name}}<span ng-click="removeCir($index)">  X </span>
+                        <li ng-repeat = "task in circuits">{{task.Name}}<span ng-click="removeCir($index)"> <img src="./static/img/fileclose.png" alt="Close" style="width: 20px;"/> </span>
                         <br>
                         <span>Due: {{task.Due}}</span>
                         </li>
@@ -78,7 +78,7 @@
             <div style = "height:width:260px;background:rgba(0,0,0,0.2);position:relative;top:51px; left:-60px;" ng-show ="matAbout" ng-style="{height: aboutHeight+materials.length *40 + 'px'}">
                     <ul style="padding: 0px;">
                         <h4>MTE111 (Materials)</h4>
-                        <li ng-repeat = "task in materials">{{task.Name}}<span ng-click="removeMat($index)">  X </span>
+                        <li ng-repeat = "task in materials">{{task.Name}}<span ng-click="removeMat($index)"> <img src="./static/img/fileclose.png" alt="Close" style="width: 20px;"/></span>
                         <br>
                         Due {{task.Due}}
                         </li>
