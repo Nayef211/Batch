@@ -10,16 +10,28 @@
 
 <body>
     <div class="login">
-    <div class="login-triangle"></div>
-  
-    <h2 class="login-header">Log in</h2>
+        <div class="login-triangle"></div>
+    
+        <h2 class="login-header">Log in</h2>
 
-    <form name="form" class="login-container">
-        <p><input type="email" placeholder="Email" name="emailHolder" id="mail"/></p>
-        <p><input type="password" placeholder="Password" name="passHolder" id="pass"/></p>
-        <p><input type="submit" value="Login" onclick="return validateForm()"/></p>
-    </form>
+        <form name="form" class="login-container">
+            <p><input type="email" placeholder="Email" name="emailHolder" id="mail"/></p>
+            <p><input type="password" placeholder="Password" name="passHolder" id="pass"/></p>
+            <p><input type="submit" value="Login" onclick="return validateForm()"/></p>
+        </form>
     </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form name="register" class="reg-container">
+                <p><input type="email" placeholder="Email here you bonobo" name="mailPassHolder" id="regEmail"/></p>
+                <p><input type="password" placeholder="What's the password" name="regPassHolder" id="regPass"/></p>
+                <p><input type="submit" onclick="FUNCTION_HERE()"/></p>
+            </form>
+        </div>
+    </div>
+            
 
     <script src="static/js/jquery-3.1.1.min.js" type="text/javascript"></script>
     

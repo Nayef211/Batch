@@ -8,4 +8,5 @@ function validateForm() {
         window.location.href = "dashboard.html";
         return false;
     }
+    
 };
