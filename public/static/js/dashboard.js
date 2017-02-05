@@ -54,3 +54,21 @@ angular
 
     });
 }());
+
+window.onload = function(){
+	const logoutB = document.getElementById('logout');
+
+	logoutB.addEventListener('click', e => {
+        firebase.auth().signOut();
+    });
+
+	firebase.auth().onAuthStateChanged(firebaseUser => {
+        if(firebaseUser) {
+            console.log(firebaseUser);
+            window.location = './dashboard.html';
+        } else {
+            console.log("not logged in");
+			window.location = './index.html';
+        }
+    });
+}
