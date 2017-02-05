@@ -54,7 +54,7 @@ angular
 
     });
 }());
-
+/*
 window.onload = function(){
 	const logoutB = document.getElementById('logout');
 
@@ -71,4 +71,4 @@ window.onload = function(){
 			window.location = './index.html';
         }
     });
-}
+}*/
