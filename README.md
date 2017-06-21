@@ -14,7 +14,7 @@ As you can see, over time, the information will get diluted, and there is no way
 We wanted to create a public to-do list, where every single classmate has an impact on your to-do list. We all have a hard time of proritizing our to-do list and knowing what needed to get done. We wanted to publisize this process and make it much easier.
 
 ## What It Does
-We created a task manage that can handle and organize deadlines for multiple courses that a cohort may have. This is a list of to-dos that will be organized by class reps who can push tasks to the main database. On the user end, individuals can "check off" tasks that they've already accomplished, or add their own individual tasks.
+We created a task manager that can handle and organize deadlines for multiple courses that a cohort may have. This is a list of to-dos that will be organized by class reps who can push tasks to the main database. On the user end, individuals can "check off" tasks that they've already accomplished, or add their own individual tasks.
 
 ## Try It Out
 https://batch-3fd9b.firebaseapp.com/dashboard.html
